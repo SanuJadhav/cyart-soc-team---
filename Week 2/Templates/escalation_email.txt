@@ -1,0 +1,2 @@
+Subject: Escalation: Critical ransomware activity on Server-X
+Body: We detected ransomware indicators on Server-X, including crypto_locker.exe execution, rapid file encryption patterns, and outbound C2 attempts from 192.168.1.50. Wazuh flagged abnormal process behavior, and host telemetry confirms compromised state. Immediate containment is recommended (isolate Server-X, block IP, disable SMB shares). IOCs: File crypto_locker.exe (hash pending), src IP 192.168.1.50, suspicious registry changes. Ticket created in TheHive with artifacts and logs.
