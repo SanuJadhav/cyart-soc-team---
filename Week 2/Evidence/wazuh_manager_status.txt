@@ -1,0 +1,34 @@
+● wazuh-manager.service - Wazuh manager
+     Loaded: loaded (/usr/lib/systemd/system/wazuh-manager.service; enabled; preset: disabled)
+     Active: active (running) since Mon 2026-01-05 11:45:15 IST; 28s ago
+    Process: 75110 ExecStart=/usr/bin/env /var/ossec/bin/wazuh-control start (code=exited, status=0/SUCCESS)
+      Tasks: 238 (limit: 4611)
+     Memory: 780.8M (peak: 867.6M swap: 32.0K swap peak: 32.0K)
+        CPU: 1min 24.039s
+     CGroup: /system.slice/wazuh-manager.service
+             ├─75322 /var/ossec/framework/python/bin/python3 /var/ossec/api/scripts/wazuh_apid.py
+             ├─75377 /var/ossec/bin/wazuh-authd
+             ├─75400 /var/ossec/bin/wazuh-db
+             ├─75434 /var/ossec/framework/python/bin/python3 /var/ossec/api/scripts/wazuh_apid.py
+             ├─75435 /var/ossec/framework/python/bin/python3 /var/ossec/api/scripts/wazuh_apid.py
+             ├─75438 /var/ossec/framework/python/bin/python3 /var/ossec/api/scripts/wazuh_apid.py
+             ├─75441 /var/ossec/framework/python/bin/python3 /var/ossec/api/scripts/wazuh_apid.py
+             ├─75454 /var/ossec/bin/wazuh-execd
+             ├─75483 /var/ossec/bin/wazuh-analysisd
+             ├─75492 /var/ossec/bin/wazuh-syscheckd
+             ├─75507 /var/ossec/bin/wazuh-remoted
+             ├─75550 /var/ossec/bin/wazuh-logcollector
+             ├─75566 /var/ossec/bin/wazuh-monitord
+             ├─75577 /var/ossec/bin/wazuh-modulesd
+             └─75949 journalctl
+
+Jan 05 11:45:09 vbox env[75110]: Started wazuh-syscheckd...
+Jan 05 11:45:11 vbox env[75110]: Started wazuh-remoted...
+Jan 05 11:45:11 vbox env[75110]: Started wazuh-logcollector...
+Jan 05 11:45:11 vbox env[75110]: Started wazuh-monitord...
+Jan 05 11:45:11 vbox env[75573]: 2026/01/05 11:45:11 wazuh-modulesd:router: INFO: Loaded router module.
+Jan 05 11:45:11 vbox env[75573]: 2026/01/05 11:45:11 wazuh-modulesd:content_manager: INFO: Loaded content_manager module.
+Jan 05 11:45:11 vbox env[75573]: 2026/01/05 11:45:11 wazuh-modulesd:inventory-harvester: INFO: Loaded Inventory harvester module.
+Jan 05 11:45:13 vbox env[75110]: Started wazuh-modulesd...
+Jan 05 11:45:15 vbox env[75110]: Completed.
+Jan 05 11:45:15 vbox systemd[1]: Started wazuh-manager.service - Wazuh manager.
