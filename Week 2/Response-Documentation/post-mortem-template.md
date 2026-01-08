@@ -17,4 +17,15 @@ Brief description of the incident.
 - Contained activity using CrowdSec firewall rules
 - Verified containment by monitoring logs and dashboard
 ## Lessons Learned
-What worked, what needs improvement.
+## Lessons Learned
+### What Worked
+- Quick detection of abnormal outbound traffic via Wazuh alerts
+- Effective escalation process with clear communication to SOC lead
+- Evidence preservation with hashes and screenshots ensured authenticity
+- Containment using CrowdSec firewall rules was successful and timely
+
+### Needs Improvement
+- Initial triage took longer due to unclear alert descriptions
+- Documentation templates should be pre‑filled to save time during incidents
+- More automation needed for hash generation and evidence collection
+- Stakeholder briefing could include clearer impact assessment
