@@ -1,5 +1,8 @@
-Subject: Briefing – Week 2 SOC Lab Findings
+Subject: Escalation – Suspicious Wazuh Alert
 
-This week’s analysis focused on simulated attack detection. Our monitoring tools flagged suspicious activity, which we confirmed through triage and evidence preservation. The incident was contained using CrowdSec, preventing further impact. Documentation and screenshots are included for transparency. The exercise demonstrates our ability to detect, respond, and communicate effectively. No real systems were harmed; this was a controlled lab scenario.
+Hi Team,
 
+During triage I observed repeated Wazuh alerts tied to abnormal outbound traffic from host 10.0.2.15. Initial checks suggest possible data exfiltration. I’ve preserved logs and attached screenshots for review. Given the persistence and potential impact, I recommend immediate escalation to Tier‑2 for deeper investigation. Please advise on containment steps.
+
+Regards,
 Sanika
